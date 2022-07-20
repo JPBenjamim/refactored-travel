@@ -1,0 +1,26 @@
+:root{
+    --white-100: #FFFFFF;
+    --white-300: #F0FDF4;
+
+    --black-100: #252641;    
+
+    --gray-100: #B2B3CF;
+    --gray-500: #556987;
+    --gray-800: #333F51;
+    --gray-900: #2A3342;
+
+    --blue-600: #5FA4E4;
+    --blue--800: #476FD3;
+
+    --orange-600: #EF980C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
