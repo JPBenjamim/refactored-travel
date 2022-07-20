@@ -1,0 +1,20 @@
+.containerNavbar {
+  padding: 22px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+button {
+  position: fixed;
+  right: 44px;
+}
+.contact {
+  text-decoration: none;
+  color: #f0fdf4;
+}
+
+.logo {
+  position: fixed;
+  width: 50px;
+}
