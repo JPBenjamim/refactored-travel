@@ -7,10 +7,10 @@ function Navbar() {
     <div className={`container   ${styles.containerNavbar}`}>
       
         <img src={logo} alt="" className={styles.logo} />{' '}
-        <button className= "btn btn-primary">
+        <button className= "btn btn-primary hover-shadow">
           
           <a className={styles.contact} href="#">            
-            Contato
+          <i class="bi bi-whatsapp"> </i>Contato
           </a>
         </button>
      
