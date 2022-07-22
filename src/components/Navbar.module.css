@@ -1,0 +1,35 @@
+.containerNavbar {
+  padding: 22px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+button {
+  position: absolute;
+  right: 44px;
+}
+
+button:hover {
+      background: linear-gradient(45deg,
+      rgba(50, 29, 236, 0.5),
+      rgba(91, 14, 214, 0.5) 100%
+    );
+}
+
+.contact {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #f0fdf4;
+}
+
+.contact:hover {
+  text-decoration: none;
+  color: #f0fdf4;
+}
+
+.logo {
+  position: absolute;
+  width: 50px;
+}
