@@ -1,11 +1,15 @@
+import Navbar from "./components/Navbar"
+
 import { useState } from 'react'
 import "./global.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <div>Hello world</div>
+    <div >
+   <Navbar />
+    </div>
   )
 }
 
