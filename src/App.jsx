@@ -1,16 +1,17 @@
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
+import { Insight } from "./components/Insight";
 
-import { useState } from 'react'
+import { useState } from 'react';
 import "./global.css";
 
 function App() {
   
-
   return (
     <div >
-   <Navbar />
+      <Navbar />
+      <Insight />
     </div>
   )
 }
 
-export default App
+export default App;
