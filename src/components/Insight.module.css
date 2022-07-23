@@ -1,0 +1,50 @@
+.containerInsight{
+    position: relative;
+}
+
+.insight{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.9375rem;
+    box-shadow: 0px 46px 155px rgba(71, 111, 211, 0.11), 0px 5.75991px 48.0075px rgba(71, 111, 211, 0.055);
+    background: #FFFFFF;
+    padding: 3.125rem 3.75rem;
+    border-radius: 2.5rem;
+    margin-top: calc(-3.125rem - 0.8rem - 0.5rem);
+    position: absolute;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .insight{
+        position: relative;
+    }
+}
+
+.insight li{
+    display: flex;
+    align-items: center;
+    gap: 2.3125rem;
+}
+
+.insight li svg{
+    color: var(--gray-500);
+}
+
+.insight li div{
+    display: flex;
+    flex-direction: column;
+}
+
+.insight li div span{
+    color: var(--gray-500);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.insight li div strong{
+    color: var(--blue--800);
+    font-size: 1rem;
+    font-weight: 600;
+}

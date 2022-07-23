@@ -1,0 +1,7 @@
+.start{
+    background: url('./assets/background-banner.png');
+}
+
+.containerFindTravel{
+    background: var(--white-100);
+}
