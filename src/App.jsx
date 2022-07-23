@@ -1,15 +1,20 @@
 import Navbar from "./components/Navbar"
+import { Banner } from "./components/Banner";
 
-import { useState } from 'react'
+import styles from "./App.module.css";
+
 import "./global.css";
 
 function App() {
   
 
   return (
-    <div >
-   <Navbar />
-    </div>
+    <>
+      <div className={styles.container}>
+        <Navbar />
+        <Banner />
+      </div>
+    </>
   )
 }
 
