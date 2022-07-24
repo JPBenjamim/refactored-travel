@@ -1,3 +1,7 @@
+.containerInsight{
+    position: relative;
+}
+
 .insight{
     list-style: none;
     display: flex;
@@ -9,6 +13,13 @@
     padding: 3.125rem 3.75rem;
     border-radius: 2.5rem;
     margin-top: calc(-3.125rem - 0.8rem - 0.5rem);
+    position: absolute;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .insight{
+        position: relative;
+    }
 }
 
 .insight li{

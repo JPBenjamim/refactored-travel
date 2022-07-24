@@ -1,0 +1,86 @@
+.business{
+    margin: 10.625rem 0 0 0;
+}
+
+.business ul{
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .business ul{
+        flex-direction: column;
+    };
+}
+
+.business ul li img{
+    height: 2rem;
+    width: auto;
+}
+
+.findTravel{
+    text-align: center;
+    padding: 6.5rem 0 3.1875rem 0;
+}
+
+.findTravel strong{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--orange-600); 
+}
+
+.findTravel h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--gray-900);
+    padding: 1rem 0;
+}
+
+.findTravel p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray-500);
+}
+
+
+.containerListCards ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerListCards ul{
+        flex-wrap: wrap;
+    }
+}
+
+.containerListCards ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.containerListCards ul li h4{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    padding: 2rem 0 1rem 0;
+}
+
+.containerListCards ul li p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray-500);
+}
+
