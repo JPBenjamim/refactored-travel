@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '/src/assets/logojj.png'
 import styles from './Navbar.module.css'
 
-function Navbar() {
+export function Navbar() {
   return (
     <div className={`container   ${styles.containerNavbar}`}>
       
@@ -18,4 +18,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+
