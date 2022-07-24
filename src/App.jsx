@@ -16,8 +16,8 @@ function App() {
         <Navbar />
         <Banner />
         <Insight />
-        <Trips />
       </div>
+      <Trips />
     </>
   )
 }

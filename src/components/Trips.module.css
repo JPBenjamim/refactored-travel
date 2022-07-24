@@ -2,44 +2,32 @@
   display: flex;
   flex-direction: column;
 
-  }
+}
 
-  .container .carousel {
+.container .carousel {
+  display: flex;
+  margin: 0 auto;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
 
-    width: 100vw;
-    display: flex;
-    margin: 0 auto;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
+.container .carousel .item {
+  border-radius: 5px;
+}
 
-  .container .carousel .item{    
-    border-radius: 5px; 
-  }
+.container .carousel .item img {
+  width: 384px;
+  height: 568px;
+  margin: 10px;
+}
 
-  .container .carousel .item img{ 
-    width: 384px;
-    height: 568px;
-    margin: 10px;
-  }
+.container .buttons {
+  width: 100px;
+  text-align: center;
+}
 
-  .container .buttons {
-    width: 100px;
-    text-align: center;
-  }
-
-  .container .buttons button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-
-  
-
- 
-
-  
- 
-
-
+.container .buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

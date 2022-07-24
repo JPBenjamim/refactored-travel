@@ -1,126 +1,83 @@
 import photo from '../assets/photo1.png'
 import styles from './Trips.module.css'
+
 import { useRef } from 'react';
 
 
-const carousel =useRef(null);
-
-const handleLeftClick = (e) => {
-  e.preventDefault();
-  carousel.current.scroolleft += carousel.current.offsetWidth;
-
-};
-
-const handleRightClick = (e) => {
-  e.preventDefault();
-  carousel.current.scroolleft -= carousel.current.offsetWidth;
-};
 
 export function Trips() {
+  const carousel = useRef(null);
+
+  const handleLeftClick = (e) => {
+    e.preventDefault();
+    carousel.current.scroolleft += carousel.current.offsetWidth;
+
+  };
+
+  const handleRightClick = (e) => {
+    e.preventDefault();
+    carousel.current.scroolleft -= carousel.current.offsetWidth;
+  };
+
+
   return (
-   
-
-
-    <section className={styles.container}>
-      <div>
-        <h1>Location</h1>
-        <h2>Sugest location</h2>
-        <p>Travel is my life. Since 2015, I’ve been traveling around the world nonstop. If you also travel, you’re in the right place!
-        </p>
-      </div>
-      <div className={styles.carousel} ref={carousel}>
-        <div className={styles.item}>
-          <img src={photo} alt="" />
-          <div className={styles.rated}>
-            <div>
-              <span className="type">Garmicsh</span>
-              <span className="location">Garmicsh</span>
-            </div>
-            <div>
-              <span className="price">R$ 00,00</span>
-              <span className="star">***</span>
+    <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <div className="container">
+            <div className='row'>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
             </div>
           </div>
         </div>
-
-        <div className={styles.item}>
-          <img src={photo} alt="" />
-          <div className={styles.rated}>
-            <div>
-              <span className="type">Garmicsh</span>
-              <span className="location">Garmicsh</span>
-            </div>
-            <div>
-              <span className="price">R$ 00,00</span>
-              <span className="star">***</span>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.item}>
-          <img src={photo} alt="" />
-          <div className={styles.rated}>
-            <div>
-              <span className="type">Garmicsh</span>
-              <span className="location">Garmicsh</span>
-            </div>
-            <div>
-              <span className="price">R$ 00,00</span>
-              <span className="star">***</span>
+        <div className="carousel-item">
+          <div className="container">
+            <div className='row'>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
             </div>
           </div>
         </div>
-
-        <div className={styles.item}>
-          <img src={photo} alt="" />
-          <div className={styles.rated}>
-            <div>
-              <span className="type">Garmicsh</span>
-              <span className="location">Garmicsh</span>
-            </div>
-            <div>
-              <span className="price">R$ 00,00</span>
-              <span className="star">***</span>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.item}>
-          <img src={photo} alt="" />
-          <div className={styles.rated}>
-            <div>
-              <span className="type">Garmicsh</span>
-              <span className="location">Garmicsh</span>
-            </div>
-            <div>
-              <span className="price">R$ 00,00</span>
-              <span className="star">***</span>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.item}>
-          <img src={photo} alt="" />
-          <div className={styles.rated}>
-            <div>
-              <span className="type">Garmicsh</span>
-              <span className="location">Garmicsh</span>
-            </div>
-            <div>
-              <span className="price">R$ 00,00</span>
-              <span className="star">***</span>
+        <div className="carousel-item">
+          <div className="container">
+            <div className='row'>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
+              <div className="col-4">
+                <img src={photo} className="d-block w-100" alt="..." />
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-    <div className="buttons">
-      <button onClick={handleLeftClick}> + </button>
-      <button onClick={handleRightClick}> - </button>
+      <button className="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
+      </button>
     </div>
-    </section>
-
-
   )
 }
 
