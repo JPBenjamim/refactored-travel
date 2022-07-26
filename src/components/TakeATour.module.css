@@ -1,22 +1,41 @@
+.container{
+    background-image: url('../assets/background-takeATour.png');
+    background-repeat: no-repeat;
+}
+
+.takeATour{
+    padding: 12.5rem 0 10.9375rem 0;
+}
+
 .takeATour strong{
     color: var(--orange-600);
     font-weight: 600;
     font-size: 1.25rem;
-    padding-bottom: 16px;
 }
 
 .takeATour h3{
     font-weight: 400;
     font-size: 2.5rem;
     color: var(--gray-900);
+    padding-top: 1rem;
 }
 
 .takeATour p{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--gray-500);
     padding: 16px 0 40px 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .takeATour h3{
+        color: var(--white-100);
+    }
+    .takeATour p{
+        color: var(--white-300);
+    }
+}
+
 
 .takeATour a{
     text-decoration: none;
@@ -24,7 +43,7 @@
     background: var(--blue--800);
     box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
     border-radius: 0.375rem;
-    padding: 14px 28px;
+    padding: 0.875rem 1.75rem;
     font-weight: 500;
     font-size: 1.125rem;
 }

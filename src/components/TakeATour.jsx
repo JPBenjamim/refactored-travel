@@ -5,7 +5,7 @@ export function TakeATour(){
         <section className={styles.container}>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-7'>
+                    <div className='offset-lg-7 col-lg-5 col-12'>
                         <div className={styles.takeATour}>
                             <strong>
                                 Take a Tour

@@ -1,5 +1,7 @@
 .start{
     background: url('./assets/background-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .containerFindTravel{
