@@ -8,7 +8,7 @@ import styles from './Insight.module.css';
 export function Insight(){
     return(
         <section className={`container ${styles.containerInsight}`}>
-            <div className='Row'>
+            <div className='row'>
                 <div className='col-12'>
                     <ul className={styles.insight}>
                         <li>
