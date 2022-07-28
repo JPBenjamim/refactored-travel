@@ -71,6 +71,11 @@
     padding: 0 2rem;
 }
 
+.containerListCards ul li img{
+    height: 6.25rem;
+    width: auto;
+}
+
 .containerListCards ul li h4{
     font-size: 1rem;
     font-weight: 600;

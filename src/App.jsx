@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar"
 import { Insight } from "./components/Insight";
 import { Banner } from "./components/Banner";
 import { FindTravel } from "./components/FindTravel";
+import { TakeATour } from "./components/TakeATour";
 
 import styles from "./App.module.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Insight />
         <FindTravel />
       </div>
+      <TakeATour />
     </>
   )
 }
